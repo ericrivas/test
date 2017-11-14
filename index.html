@@ -14,7 +14,7 @@ body, html {
     line-height: 1.8;
 }
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-4, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,16 +30,22 @@ body, html {
     background-image: url("https://www.thelandport.com/wp-content/themes/landport/img/header-img.jpg");
     min-height: 400px;
 }
+/* Third image (Learn More) */
+.bgimg-4 {
+    background-image: url("https://www.thelandport.com/wp-content/themes/landport/img/the-landport-header-3.jpg");
+    min-height: 400px;
+}
 /* Third image (Contact) */
 .bgimg-3 {
     background-image: url("https://www.thelandport.com/wp-content/themes/landport/img/the-landport-header-5.jpg");
     min-height: 400px;
 }
+
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
+    .bgimg-1, .bgimg-2, .bgimg-4, .bgimg-3 {
         background-attachment: scroll;
     }
 }
@@ -55,6 +61,7 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button">HOME</a>
     <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-lock"></i> ABOUT</a>
     <a href="#shop" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-shopping-cart"></i> SHOP</a>
+    <a href="#learnmore" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-lock"></i> LEARN MORE</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> <b>CONTACT</b></a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -79,19 +86,21 @@ body, html {
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
-  <p class="w3-xlarge w3-center"><b>ABOUT</b></p>
-  <p class="w3-large w3-center w3-padding-16">How It Works</p>
-  <p>Explain the company concept here This is all placeholder text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-    qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><b>ABOUT</b></p>
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">How It Works</p>
+  <p>The LockBox was designed not only strong and attractive, but also straightforward, making it easy to install and use. Plus, it’s tamper-proof, weather-resistant, and made in America.
+    Once packages are placed inside, the LockBox’s heavy-duty latch snaps shut and locks on contact, creating a secure point of delivery at homes and small businesses. Packages are kept safe until they can be retrieved at a convenient time.
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">Friends and Family</p>
+  <p>Keep in mind LockBox isn’t only for commercial deliveries. Use LockBox to share and exchange things with friends and neighbors. Just place the item in your LockBox,
+    use the app to remotely unlock the box for them, and let them pick it up at their convenience. When it’s time to return the item, they can just leave it in LockBox, where it will remain safe until you retrieve it.</p>
 
-  <p class="w3-large w3-center w3-padding-16">LockBox Features</p>
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">LockBox Features</p>
   <p class=""><i class="fa fa-lock"></i>  Commercial-grade locking mechanism designed to function smoothly.</p>
   <p class=""><i class="fa fa-archive"></i>  Heavy-duty latch that snaps shut on contact.</p>
   <p class=""><i class="fa fa-gears"></i>  Hydraulic struts that keep the lid propped open and prevent it from falling, making it safe and effortless to leave and retrieve packages.</p>
   <p class=""><i class="fa fa-wrench"></i>  Neatly ﬁnished, predrilled holes in the base are aligned with corresponding pre-drilled holes in the shoes, making for a faster installation.</p>
 
-  <p class="w3-large w3-center w3-padding-16">Statistics</p>
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">Statistics</p>
   <p class=""><i class="fa fa-group"></i>  Percent of homeowners that avoiding online shopping for fear of package theft</p>
   <div class="w3-light-grey">
     <div class="w3-container w3-padding-small w3-red w3-center" style="width:41%">41%</div>
@@ -121,6 +130,26 @@ body, html {
   </div>
 </div>
 
+<!-- Fourth Parallax Image with Learn More Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">LEARN MORE</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-64" id="learnmore">
+  <p class="w3-center w3-padding-large w3-xlarge w3-wide w3-animate-opacity"><b>LEARN MORE</b></p>
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">Optional Installation</p>
+  <p>For the most secure installation of your LockBox, we suggest bolting it down to its location. You can attach LockBox to concrete, asphalt or wood, depending on where you want to place it.
+    This may sound more difficult than it really is. Keep in mind you don’t have to bolt all 4 corners – one should do it.
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">Materials</p>
+  <p>LockBox’s main body is constructed from 16 gauge steel, a thickness that’s very difficult to penetrate. It’s then powder coated to created a smooth,
+    slightly glossy ﬁnish that resists rusts and withstands the elements.</p>
+  <p class="w3-large w3-center w3-light-gray w3-padding-16">Capacity</p>
+  <p>At a roomy 9200 cubic inches (150 liters), LockBox is large enough to hold a dozen shoeboxes, but small enough to take home in your vehicle. LockBox’s generous,
+    horizontally-oriented opening allows for packages to be placed inside, ensuring the contents arrive in one piece.</p>
+</div>
+
 <!-- Second Parallax Image with Shop Text -->
 <div class="bgimg-2 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
@@ -138,9 +167,9 @@ body, html {
         <li class="w3-padding-16"><b>Dimensions</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
-        <li class="w3-padding-16"><b>Warranty</b> ---</li>
+        <li class="w3-padding-16"><b>Warranty</b> 5 Years</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ ???</h2>
+          <h2 class="w3-wide">$ 199</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Purchase</button>
@@ -153,9 +182,9 @@ body, html {
         <li class="w3-padding-16"><b>Dimensions</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
-        <li class="w3-padding-16"><b>Warranty</b> ---</li>
+        <li class="w3-padding-16"><b>Warranty</b> 5 Years</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ ???</h2>
+          <h2 class="w3-wide">$ 299</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Purchase</button>
@@ -168,9 +197,9 @@ body, html {
         <li class="w3-padding-16"><b>Dimensions</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
         <li class="w3-padding-16"><b>XXX</b> ---</li>
-        <li class="w3-padding-16"><b>Warranty</b> ---</li>
+        <li class="w3-padding-16"><b>Warranty</b> 5 Years</li>
         <li class="w3-padding-16">
-          <h2 class="w3-wide">$ ???</h2>
+          <h2 class="w3-wide">$ 399</h2>
         </li>
         <li class="w3-light-grey w3-padding-24">
           <button class="w3-button w3-black w3-padding-large">Purchase</button>
@@ -233,7 +262,7 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
   </div>
   <p>RETURN POLICY  |  PRIVACY POLICY  |  TERMS & CONDITIONS</p>
-  <p>ENTR 350-012</p>
+  <p>ENTR 350 - 012</p>
 </footer>
 
 <!-- Add Google Maps -->
